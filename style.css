@@ -1,0 +1,16 @@
+  
+  #esquerda{
+
+    float:left;
+}
+
+#direita{
+
+    float: right;
+}
+
+#normal{
+
+    margin: 0 auto;
+    width: 30px;
+}
