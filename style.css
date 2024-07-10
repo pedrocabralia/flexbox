@@ -1,16 +1,7 @@
-  
-  #esquerda{
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: end;
 
-    float:left;
-}
-
-#direita{
-
-    float: right;
-}
-
-#normal{
-
-    margin: 0 auto;
-    width: 30px;
 }
