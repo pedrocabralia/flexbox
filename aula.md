@@ -177,3 +177,77 @@ no **CSS** alterando a posição em relação ao eixo principal:
     }
 ```
 ### Flex sizing
+* Altera o tamanho e a larguga de um itens para preenchimento do container. 
+
+ * Ex.:
+
+ ```html 
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+   </div>
+
+```
+
+ ```css 
+
+    .container{
+        display:flex;
+        border: 1px solid red;
+        height: 400px;
+    }
+
+    .item{
+
+        border: 1px solid black;
+        background-color: gray;
+
+    }
+
+```
+* O elemento vai pegar toda a altura no caso 400px; 
+
+* Se utilizarmos a propriedade Flex-sizing podemos alterar o tamanho do elemento:
+
+```css 
+
+    .container{
+        display:flex;
+        border: 1px solid red;
+        height: 400px;
+    }
+
+    .item{
+        background-color: gray;
+        border: 1px solid black;
+        flex:1;
+
+    }
+
+```
+
+* Se alterarmos a altura para uma altura mais responsivel, o elemento irá se adaptar ao tamanho da tela:
+
+
+```css 
+
+    .container{
+        display:flex;
+        border: 1px solid red;
+        height: 80vh;
+    }
+
+    .item{
+        background-color: gray;
+        border: 1px solid black;
+        flex:1;
+
+    }
+
+```
+
+### Propriedades do Flex Container
+
+
