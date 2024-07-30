@@ -1,0 +1,36 @@
+
+header{
+
+    border: 1px solid red;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: gainsboro;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    border: 1px solid red;
+    justify-content: end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
