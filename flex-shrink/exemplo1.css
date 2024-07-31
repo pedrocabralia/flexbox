@@ -1,0 +1,17 @@
+.container{
+
+    background-color: red;
+    display: flex;
+    text-align: center;
+    width: 500px;
+}
+
+.item{
+
+    background-color: white;
+    border: 1px solid red;
+    width: 250px;
+    /*flex-shrink: 0;  os itens ficarão maior que a div pai*/
+    flex-shrink:1; /*valor padrão*/
+
+}

@@ -1,0 +1,23 @@
+.container{
+
+    background-color: red;
+    display: flex;
+    text-align: center;
+
+}
+
+.item{
+
+    background-color: white;
+    border: 1px solid red;
+    flex: 1;
+   
+
+}
+
+.container div:nth-child(2){
+
+    background-color: aqua;
+    flex-grow: 2;
+
+}

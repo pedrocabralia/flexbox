@@ -519,6 +519,9 @@ INVERTENDO A COLUNA:
 
 ### Largura e altura dos itens com flex-basis
 
+- Define um tamanho inicial de um item flex.
+- 
+
 ```css
 
     .container{
@@ -549,6 +552,10 @@ INVERTENDO A COLUNA:
 - Com essa propriedade, conseguimos adaptar o crescimento do item em relação ao espaços vazios dentro de um container.
 
 - Posso colocar para todos elementos ocuparem os espaços vazios do container:
+- Quanto colocamos o flex: 1 estamos dizendo que cada div em nosso elemento deve crescer proprorcionalmente o mesmo tamanho.
+- Se, em vez disso, adicionarmos flex: 2a apenas uma das divs, essa div cresceria para 2x o tamanho das outras.
+
+
 
 ```css
 .container{
@@ -606,6 +613,12 @@ INVERTENDO A COLUNA:
 
 
 - Por padrão o flex-shrink é 1, ou seja o elemento vai se adaptar ao tamanho disponível na caixa(container).
+- flex-shrink só acaba sendo aplicado se o tamanho de todos os itens flex for maior que seu contêiner pai.
+- Por exemplo, se  3 divs  tivessem uma declaração de largura como: width: 100px, e .flex-container(div pai) fossem menores que 300px, nossos divs teriam que encolher para caber.
+- O fator de encolhimento padrão é flex-shrink: 1, o que significa que todos os itens encolherão uniformemente. Se você não quiser que um item encolha, você pode especificar flex-shrink: 0;. Você também pode especificar números maiores para fazer certos itens encolherem a uma taxa maior do que o normal.
+
+
+
 
 -Ex.: 
 
@@ -656,4 +669,14 @@ INVERTENDO A COLUNA:
 # Desafio 3 
 
 ![](img/desafio3.png)
+
+# Mais conteúdos:
+
+[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+[documentação](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox)
+
+[jogo do sapo](https://flexboxfroggy.com/)
+
+[Zombies](https://mastery.games/flexboxzombies/)
 
