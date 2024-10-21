@@ -4,16 +4,38 @@
 ## Nomal Flow 
 
 * São os elementos **block** e **inline**.
-  
-    ex: 
-    ```html
+* Os elementos inlies eles ocupam apenas o espaço necessário para seu conteúdo e não forçam uma nova linha.
+* Exemplos:
+``` html
+    <a> (links) </a>
+    <span> (container genérico inline)
+    <strong> e <em> (negrito e itálico, respectivamente)
+    <img> (imagens)
+```
+* Elementos Blocks: 
+```html 
+Exemplos de elementos block:
+<div> (container genérico block)
+<p> (parágrafos)
+<h1>, <h2>, ... <h6> (cabeçalhos)
+<ul> e <ol> (listas)
+<section>, <article>, <nav>, <header>, etc.
+```
+
+
+
+ ex: 
+```html
 
            <p> Texto Block  <strong> inline</strong> </p>
 
             <p> texto block </p> 
 
-    ```
-     *colocar uma cor de fundo*   
+            <p>Este é um <a href="#">link</a> inline dentro de um parágrafo.</p>
+
+
+```
+*colocar uma cor de fundo*   
     
 
 * Dá para alterar o Css de Block para inline:
@@ -25,24 +47,35 @@
          }
    ```
 
+* Mostrar o exemplo do Span, que é um elemento inline e não consigo alterar a largura e altura dele, tendo que mudar para block ou inline-block.
+
+* Há também um comportamento intermediário chamado inline-block, onde o elemento se comporta como inline, mas você ainda pode definir sua largura e altura como se fosse um elemento block.
+
+* Características:
+* Não quebra a linha, assim como os elementos inline.
+* Você pode definir largura e altura, diferentemente dos elementos inline.
+
 ## Table 
 
 * É a forma de vizualização dos elementos em tabelas.  **tr** == linhas  e **td** == colunas.
     ex.: 
     ```html
-        <table>
-            <tr>
-                <td>Nome:</td>
-                <td>Pedro Vinicios</td>
-            </tr>
+        <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>idade</th>
+        </tr>
+        <tr>
+            <td>Pedro Vinicios</td>
+            <td>29</td>
+        </tr>
 
-            <tr>
-                <td>idade:</td>
-                <td>28</td>
-            </tr>
+        <tr>
+            <td>Alessandra</td>
+            <td>27</td>
+        </tr>
 
-        </table>
-
+    </table>
     ```
 
 
@@ -431,13 +464,13 @@ INVERTENDO A COLUNA:
 
 ### Align-itens:
 
-    - Alinha os elementos no eixo cruzado:
+- Alinha os elementos no eixo cruzado:
 
-    - Valores:
-        * stretch
-        * flex-start
-        * flex-end
-        * center
+- Valores:
+    * stretch
+    * flex-start
+    * flex-end
+    * center
 
 
 ```css
